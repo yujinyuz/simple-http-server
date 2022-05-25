@@ -16,7 +16,7 @@ func Log(handler http.Handler) http.Handler {
 func main() {
 	var port string
 
-	if len(os.Args) <= 2 {
+	if len(os.Args) < 2 {
 		port = "8000"
 	} else {
 		port = os.Args[1]
